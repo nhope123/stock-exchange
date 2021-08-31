@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+import DateSelectionProvider from './contexts/dateSelectionContext';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DateSelectionProvider  >
+      <App />
+    </DateSelectionProvider >
   </React.StrictMode>,
   document.getElementById('root')
 );

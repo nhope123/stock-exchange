@@ -7,7 +7,9 @@ import { DateSelectionContext } from '../contexts/dateSelectionContext';
 const options = {
 	mode: 'range',
 	enableTime: true,
-	dateFormat: 'U'	
+	//dateFormat: 'Y-m-d H:i:S\\Z',
+	altFormat: "DD-MM-YYYY",	
+	//altInput: true
 }
 
 /**
